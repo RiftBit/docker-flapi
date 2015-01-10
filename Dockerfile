@@ -1,4 +1,4 @@
-# 3proxy docker
+# flapi docker
 #
 # VERSION               0.1
 # Run with: docker run --name flapi -d -p 5000:5000 riftbit/docker-flask
