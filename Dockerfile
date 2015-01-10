@@ -1,7 +1,7 @@
 # 3proxy docker
 #
 # VERSION               0.1
-# Run with: docker run -d -p 8080:8080 riftbit/docker-flapi
+# Run with: docker run -d -p 5000:5000 riftbit/docker-flapi
 
 FROM debian:latest
 MAINTAINER ErgoZ <ergozru@gmail.com>
@@ -14,6 +14,6 @@ RUN apt-get -y update && \
 RUN git clone git@github.com:RiftBit/flapi.git && \
     pip install -r /flapi/requirements.txt
 
-EXPOSE 8080:8080/tcp
+EXPOSE 5000/tcp
 
 CMD /flapi/runp.py
